@@ -28,7 +28,7 @@
               <a class="nav-item" href="./portfolio.html">Portfolio</a>
             </li>
             <li>
-              <a class="nav-item" href="">Contacts</a>
+              <a class="nav-item" href="./contacts.html">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -52,7 +52,14 @@
       <section class="hero-section">
         <div class="hero-container">
           <h1 class="hero-text">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
+        </div>
+        <div class="modal is-hidden" data-modal>
+          <div class="modal-content">
+            <button type="button" class="close-btn" data-modal-close>x</button>
+          </div>
         </div>
       </section>
       <!-- Text section -->
@@ -459,5 +466,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/navbar-underline.js"></script>
   </body>
 </html>
